@@ -8,13 +8,6 @@ spec:
   containers:
   - name: myapp
     image: nginx:latest
-    resources:
-      requests:
-        memory: "64Mi"
-        cpu: "50m"
-      limits:
-        memory: "128Mi"
-        cpu: "100m"
     ports:
       - containerPort: 80
 
@@ -30,13 +23,6 @@ spec:
   containers:
   - name: myapp
     image: achinta1/achinta-colors:green
-    resources:
-      requests:
-        memory: "64Mi"
-        cpu: "50m"
-      limits:
-        memory: "128Mi"
-        cpu: "100m"
     ports:
       - containerPort: 80
 
@@ -52,12 +38,5 @@ spec:
   containers:
   - name: myapp
     image: achinta1/achinta-colors:blue
-    resources:
-      requests:
-        memory: "64Mi"
-        cpu: "50m"
-      limits:
-        memory: "128Mi"
-        cpu: "100m"
     ports:
       - containerPort: 80
